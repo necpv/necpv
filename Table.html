@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="Table.css">
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td></td>
+      <td>
+        <table>
+          <tr><td class='minus' id='rY0' onclick=removeY() onmouseover=mouseOverMinusY(event)>-</td></tr>
+        </table>
+      <td>
+    </tr>
+    <tr>
+      <td>
+        <table>
+          <tr  id='lineX0'><td class='minus' onclick=removeX() onmouseover=mouseOverMinusX(event)>-</td></tr>
+        </table>
+      </td>
+      <td class='tab'>
+	    <table>
+          <tr id='lineX'><td class='field' id='rY' onmouseover=mouseOverField(event)></td></tr>
+	    </table>
+
+      </td>
+      <td valign="top">
+        <table>
+          <tr><td class='plus' onclick=addX() onmouseover=mouseOverPlus(event)>+</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td align="center">
+        <table>
+          <tr><td class='plus' onclick=addY() onmouseover=mouseOverPlus(event)>+</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+  <div id="number"></div>
+
+  <script type="text/javascript" src="table.js"></script>
+
+</body>
+</html>
